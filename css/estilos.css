@@ -1,0 +1,764 @@
+/* Establece que todos los elementos de la página tengan márgenes y rellenos en 0 y que el tamaño de las cajas incluya el borde y el relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define el estilo para los elementos con la clase 'titulo' */
+.titulo {
+    color: white; /* Texto en color blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 5%; /* Posiciona a 5% del borde izquierdo de su contenedor */
+    top: 2.3%; /* Posiciona a 2.3% del borde superior de su contenedor */
+    font-size: 250%; /* Tamaño de fuente al 250% del tamaño base */
+}
+
+/* Establece el fondo de los elementos con la clase 'body' usando una imagen */
+.body {
+    background: url(../img/img1.jpeg);
+}
+
+/* Establece un fondo de color para los elementos con la clase 'body2' */
+.body2 {
+    background-color: rgb(34, 34, 34); /* Color de fondo gris oscuro */
+}
+
+.enlacehover {
+    color: rgba(38, 125, 224, 0.774);
+}
+
+/* Define el estilo para el elemento 'nav' */
+nav {
+    max-width: 900px; /* Ancho máximo de 900px */
+    margin: auto; /* Centra el elemento horizontalmente */
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    margin-top: 50px; /* Espacio de 50px arriba del elemento */
+}
+
+/* Define el estilo para la lista con la clase 'menu' */
+.menu {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Muestra los elementos en una fila */
+    justify-content: space-around; /* Distribuye el espacio uniformemente entre los elementos */
+}
+
+/* Define el estilo para los enlaces dentro de los elementos de la lista en 'menu' */
+.menu > li > a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del contenedor de lista */
+    padding: 15px 20px; /* Añade relleno interno al enlace */
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Cambia el color de fondo de los elementos de la lista cuando el ratón pasa por encima */
+.menu > li:hover {
+    background-color: rgba(38, 125, 224, 0.774); /* Color de fondo azul con opacidad */
+}
+/* Define el estilo para el contenedor con la clase 'container1' */
+.container1 {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    height: 100vh; /* Altura igual a la altura de la ventana del navegador */
+    display: grid; /* Usa el diseño de cuadrícula */
+    place-content: center; /* Centra el contenido en el centro */
+}
+
+/* Define el estilo para el contenedor con la clase 'container2' */
+.container2 {
+    background-color: #333333; /* Color de fondo gris oscuro */
+    height: 280px; /* Altura de 280px */
+    width: -2000px; /* Ancho negativo, probablemente un error */
+    margin-top: -100px; /* Margen superior negativo */
+}
+
+/* Define el estilo para el contenedor con la clase 'container3' */
+.container3 {
+    background-color: black; /* Color de fondo negro */
+    height: 280px; /* Altura de 280px */
+    margin-top: 100px; /* Margen superior de 100px */
+}
+
+/* Define el estilo para el contenedor con la clase 'container4' */
+.container4 {
+    background-color: black; /* Color de fondo negro */
+    height: 280px; /* Altura de 280px */
+    margin-top: 550px; /* Margen superior de 550px */
+}
+
+/* Define el estilo para el contenedor con la clase 'container5' */
+.container5 {
+    background-color: black; /* Color de fondo negro */
+    height: 280px; /* Altura de 280px */
+    margin-top: 1230px; /* Margen superior de 1225px */
+}
+
+/* Define el estilo para el contenedor con la clase 'slider' */
+.slider {
+    width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+    max-width: 1000px; /* Ancho máximo de 1000px */
+    height: 720px; /* Altura de 720px */
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
+    border-radius: 10px; /* Bordes redondeados con radio de 10px */
+}
+
+/* Define el estilo para la lista dentro del contenedor con la clase 'slider' */
+.slider ul {
+    display: flex; /* Muestra los elementos en una fila */
+    padding: 0%; /* Elimina el relleno interno */
+    width: 400%; /* Ancho de 400% para permitir el desplazamiento de las imágenes */
+    animation: slide 20s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92); /* Animación continua para el slider */
+}
+
+/* Define el estilo para los elementos de la lista dentro del contenedor 'slider' */
+.slider li {
+    list-style: none; /* Elimina los puntos de lista */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+}
+
+/* Define el estilo para las imágenes dentro del contenedor 'slider' */
+.slider img {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+}
+
+/* Define la animación para el slider */
+@keyframes slide {
+    0% { margin-left: 0; } /* Comienza sin margen a la izquierda */
+    20% { margin-left: 0; } /* Mantiene el margen a la izquierda en 0% */
+    
+    25% { margin-left: -100%; } /* Desplaza el margen a la izquierda en -100% */
+    45% { margin-left: -100%; } /* Mantiene el margen a la izquierda en -100% */
+    
+    50% { margin-left: -200%; } /* Desplaza el margen a la izquierda en -200% */
+    70% { margin-left: -200%; } /* Mantiene el margen a la izquierda en -200% */
+    
+    75% { margin-left: -300%; } /* Desplaza el margen a la izquierda en -300% */
+    100% { margin-left: -300%; } /* Mantiene el margen a la izquierda en -300% */
+}
+
+/* Define el estilo para los elementos con la clase 'h2' */
+.h2 {
+    font-size: -250%; /* Tamaño de fuente negativo, probablemente un error */
+    color: white; /* Color del texto blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 5%; /* Posiciona a 5% del borde izquierdo de su contenedor */
+    top: 30%; /* Posiciona a 30% del borde superior de su contenedor */
+}
+
+/* Define el estilo para los elementos con la clase 'p1' */
+.p1 {
+    font-size: -250%; /* Tamaño de fuente negativo, probablemente un error */
+    color: white; /* Color del texto blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 5%; /* Posiciona a 5% del borde izquierdo de su contenedor */
+    top: 50%; /* Posiciona a 50% del borde superior de su contenedor */
+}
+
+/* Define el estilo para los elementos con la clase 'vertical1' */
+.vertical1 {
+    height: 260px; /* Altura de 260px */
+    width: 10px; /* Ancho de 10px */
+    background-color: white; /* Color de fondo blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 50px; /* Posiciona a 50px del borde superior de su contenedor */
+}
+
+/* Define el estilo para los elementos con la clase 'p3' */
+.p3 {
+    color: white; /* Color del texto blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 730px; /* Posiciona a 730px del borde izquierdo de su contenedor */
+    bottom: -200px; /* Posiciona a -200px del borde inferior de su contenedor */
+    font-size: 15px; /* Tamaño de fuente de 15px */
+}
+
+/* Define el estilo para los elementos con la clase 'p4' */
+.p4 {
+    color: white; /* Color del texto blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 1030px; /* Posiciona a 1030px del borde izquierdo de su contenedor */
+    bottom: -200px; /* Posiciona a -200px del borde inferior de su contenedor */
+    font-size: 15px; /* Tamaño de fuente de 15px */
+}
+
+/* Define el estilo para los elementos con la clase 'p5' */
+.p5 {
+    color: white; /* Color del texto blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 880px; /* Posiciona a 880px del borde izquierdo de su contenedor */
+    bottom: -270px; /* Posiciona a -270px del borde inferior */
+    font-size: 10px; /* Tamaño de fuente de 10px */
+}
+
+/* Define el estilo para los elementos con la clase 'enlaces' */
+.enlaces{
+    color: white; /* Color del texto blanco para enlaces */
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+}
+
+/* Define el estilo para los elementos con la clase 'vertical2' */
+.vertical2{
+    height: 200px; /* Altura de 200px */
+    width: 1px; /* Ancho de 1px */
+    background-color: white; /* Color de fondo blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 965px; /* Posiciona a 965px desde el borde superior */
+    right: 940px; /* Posiciona a 940px desde el borde derecho */
+}
+
+/* Define el estilo para los elementos con la clase 'png1' */
+.png1{
+    width: 30px; /* Ancho de 30px */
+    height: 30px; /* Altura de 30px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 170px; /* Posiciona a 170px del borde derecho */
+    bottom: -252px; /* Posiciona a -252px del borde inferior */
+}
+
+/* Define el estilo para los elementos con la clase 'png2' */
+.png2{
+    width: 28px; /* Ancho de 28px */
+    height: 26px; /* Altura de 26px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 130px; /* Posiciona a 130px del borde derecho */
+    bottom: -250px; /* Posiciona a -250px del borde inferior */
+}
+
+/* Define el estilo para los elementos con la clase 'png3' */
+.png3{
+    width: 26px; /* Ancho de 26px */
+    height: 26px; /* Altura de 26px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 90px; /* Posiciona a 90px del borde derecho */
+    bottom: -250px; /* Posiciona a -250px del borde inferior */
+}
+
+/* Define el estilo para los elementos con la clase 'galeria' */
+.galeria{
+    width: 90%; /* El ancho ocupa el 90% del contenedor */
+    max-width: 1100px; /* Ancho máximo de 1100px */
+    margin: 40px auto; /* Márgenes arriba y abajo de 40px, centrado horizontal */
+    display: grid; /* Muestra el contenido como un grid */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 40px; /* Espacio de 40px entre elementos */
+}
+
+/* Define el estilo para los elementos con la clase 'galeriaimg' */
+.galeriaimg{
+    width: 100%; /* Ancho al 100% del contenedor */
+    object-fit: cover; /* Escala la imagen manteniendo la proporción */
+    height: 100%; /* Altura al 100% del contenedor */
+}
+
+/* Define el estilo para los elementos con la clase 'text' */
+.text{
+    color: white; /* Color del texto blanco */
+    font-size: 15px; /* Tamaño de fuente de 15px */
+}
+
+/* Define el estilo para el elemento con el id 'pp1' */
+#pp1{
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 38.5%; /* Posiciona a 38.5% del borde izquierdo */
+    top: 152%; /* Posiciona a 152% del borde superior */
+}
+
+/* Define el estilo para el elemento con el id 'pp3' */
+#pp3{
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 54%; /* Posiciona a 54% del borde izquierdo */
+    top: 152%; /* Posiciona a 152% del borde superior */
+}
+
+/* Define el estilo para el elemento con el id 'pp4' */
+#pp4{
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    left: 46.2%; /* Posiciona a 46.2% del borde izquierdo */
+    top: 172%; /* Posiciona a 172% del borde superior */
+    color: white; /* Color del texto blanco */
+    font-size: 10px; /* Tamaño de fuente de 10px */
+}
+
+/* Define el estilo para el elemento con el id 'vertical3' */
+#vertical3{
+    height: 200px; /* Altura de 200px */
+    width: 1px; /* Ancho de 1px */
+    background-color: rgb(255, 255, 255); /* Color de fondo blanco */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 149%; /* Posiciona a 149% del borde superior */
+    right: 49.5%; /* Posiciona a 49.5% del borde derecho */
+}
+
+/* Define el estilo para el elemento con el id 'pp5' */
+#pp5{
+    width: 30px; /* Ancho de 30px */
+    height: 30px; /* Altura de 30px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 170px; /* Posiciona a 170px del borde derecho */
+    top: 170%; /* Posiciona a 170% del borde superior */
+}
+
+/* Define el estilo para el elemento con el id 'pp6' */
+#pp6{
+    width: 28px; /* Ancho de 28px */
+    height: 26px; /* Altura de 26px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 130px; /* Posiciona a 130px del borde derecho */
+    top: 170.1%; /* Posiciona a 170.1% del borde superior */
+}
+
+/* Define el estilo para el elemento con el id 'pp7' */
+#pp7{
+    width: 26px; /* Ancho de 26px */
+    height: 26px; /* Altura de 26px */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    right: 90px; /* Posiciona a 90px del borde derecho */
+    top: 170%; /* Posiciona a 170% del borde superior */
+}
+
+/* Define el estilo para los elementos con la clase 'linea1' */
+.linea1{
+    height: 300px; /* Altura de 300px */
+    width: 2px; /* Ancho de 2px */
+    background-color: rgb(38, 125, 224, 0.774); /* Color de fondo azul semitransparente */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 8%; /* Posiciona a 8% del borde superior */
+    right: 5%; /* Posiciona a 5% del borde derecho */
+}
+
+/* Define el estilo para los elementos con la clase 'linea2' */
+.linea2{
+    height: 300px; /* Altura de 300px */
+    width: 2px; /* Ancho de 2px */
+    background-color: rgb(38, 125, 224, 0.774); /* Color de fondo azul semitransparente */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 35%; /* Posiciona a 35% del borde superior */
+    right: 15%; /* Posiciona a 15% del borde derecho */
+}
+
+/* Define el estilo para los elementos con la clase 'linea3' */
+.linea3{
+    height: 300px; /* Altura de 300px */
+    width: 2px; /* Ancho de 2px */
+    background-color: rgb(38, 125, 224, 0.774); /* Color azul semitransparente */
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    top: 70%; /* Posiciona a 70% del borde superior */
+    right: 5%; /* Posiciona a 5% del borde derecho */
+}
+
+/* Define el estilo para los elementos con la clase 'linea4' */
+.linea4{
+    height: 300px;
+    width: 2px;
+    background-color: rgb(38, 125, 224, 0.774);
+    position: absolute;
+    top: 105%;
+    right: 15%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea5' */
+.linea5{
+    height: 300px;
+    width: 2px;
+    background-color: rgb(38, 125, 224, 0.774);
+    position: absolute;
+    top: 105%;
+    right: 95%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea6' */
+.linea6{
+    height: 300px;
+    width: 2px;
+    background-color: rgb(38, 125, 224, 0.774);
+    position: absolute;
+    top: 70%;
+    right: 85%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea7' */
+.linea7{
+    height: 300px;
+    width: 2px;
+    background-color: rgb(38, 125, 224, 0.774);
+    position: absolute;
+    top: 35%;
+    right: 95%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea8' */
+.linea8{
+    height: 300px;
+    width: 2px;
+    background-color: rgb(38, 125, 224, 0.774);
+    position: absolute;
+    top: 10%;
+    right: 85%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea9' */
+.linea9{
+    height: 300px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea10' */
+.linea10{
+    height: 300px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 75%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea11' */
+.linea11{
+    height: 300px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 95%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea12' */
+.linea12{
+    height: 300px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea13' */
+.linea13{
+    height: 2px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 27.5%;
+    right: 10%;
+}
+
+/* Define el estilo para los elementos con la clase 'linea14' */
+.linea14{
+    height: 2px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 28%;
+    right: 65%;
+}
+#linea15{
+    height: 6px;
+    width: 75px;
+    background-color: rgba(38, 125, 224, 0.774);
+    position: absolute;
+    top: 10%;
+    right: 66.5%;
+}
+#linea16{
+    height: 6px;
+    width: 97px;
+    background-color: rgba(38, 125, 224, 0.774);
+    position: absolute;
+    top: 10%;
+    right: 29.68%;
+}
+#linea17{
+    height: 6px;
+    width: 115px;
+    background-color: rgba(38, 125, 224, 0.774);
+    position: absolute;
+    top: 10%;
+    right: 41.6%;
+}
+#linea18{
+    height: 6px;
+    width: 105px;
+    background-color: rgba(38, 125, 224, 0.774);
+    position: absolute;
+    top: 10%;
+    right: 54.45%;
+}
+/* Define el estilo para el elemento con el id 'vertical4' */
+#vertical4{
+    height: 28px;
+    width: 14px;
+    background-color: white;
+    position: absolute;
+    top: 3.29%;
+    right: 99.68%;
+}
+
+/* Define el estilo para los elementos con la clase 'productostyle' */
+.productostyle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* Define el estilo para el elemento con el id 'producto1' */
+#producto1{
+    position: absolute;
+    top: 52%;
+    right: 61%;
+}
+
+/* Define el estilo para el elemento con el id 'producto2' */
+#producto2{
+    position: absolute;
+    top: 93.2%;
+    right: 61%;
+}
+
+/* Define el estilo para el elemento con el id 'producto3' */
+#producto3{
+    position: absolute;
+    top: 52%;
+    right: 41%;
+}
+
+/* Define el estilo para el elemento con el id 'producto4' */
+#producto4{
+    position: absolute;
+    top: 52%;
+    right: 21%;
+}
+
+/* Define el estilo para el elemento con el id 'producto5' */
+#producto5{
+    position: absolute;
+    top: 93.2%;
+    right: 41%;
+}
+
+/* Define el estilo para el elemento con el id 'producto6' */
+#producto6{
+    position: absolute;
+    top: 93.2%;
+    right: 21%;
+}
+
+/* Define el estilo para el elemento con el id 'producto7' */
+#producto7{
+    position: absolute;
+    top: 134.4%;
+    right: 61%;
+}
+
+/* Define el estilo para el elemento con el id 'producto8' */
+#producto8{
+    position: absolute;
+    top: 134.4%;
+    right: 41%;
+}
+
+/* Define el estilo para el elemento con el id 'producto9' */
+#producto9{
+    position: absolute;
+    top: 134.4%;
+    right: 21%;
+}
+
+/* Define el estilo para los elementos con la clase 'form-container' */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: absolute; top: 25%; right: 40%;
+}
+
+/* Define el estilo para los elementos con la clase 'h2' */
+.h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Define el estilo para los elementos con la clase 'label' */
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Define el estilo para los elementos de input con tipo 'text', 'email' o 'tel' y 'textarea' */
+.input[type="text"],
+.input[type="email"],
+.input[type="tel"],
+.textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Define el estilo para los elementos de input con tipo 'checkbox' */
+.input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Define el estilo para los elementos con la clase 'button' */
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Define el estilo para los elementos con la clase 'button' cuando se hace hover */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Define el estilo para los elementos con la clase 'privacy-policy' */
+.privacy-policy {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Define el estilo para el elemento con el id 'pp8' */
+#pp8{
+    position: absolute; left: 38.5%; top: 77%;
+}
+
+/* Define el estilo para el elemento con el id 'pp9' */
+#pp9{
+    position: absolute; left: 54%; top: 77%;
+}
+
+/* Define el estilo para el elemento con el id 'pp10' */
+#pp10{
+    position: absolute; left: 46.2%; top: 97%;
+    color: white;
+    font-size: 10px;
+}
+
+/* Define el estilo para el elemento con el id 'pp11' */
+#pp11{
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    right: 170px;
+    top: 95%;
+}
+
+/* Define el estilo para el elemento con el id 'pp12' */
+#pp12{
+    width: 28px;
+    height: 26px;
+    position: absolute; 
+    right: 130px;
+    top: 95.2%;
+}
+
+/* Define el estilo para el elemento con el id 'pp13' */
+#pp13{
+    width: 26px;
+    height: 26px;
+    position: absolute; 
+    right: 90px;
+    top: 95%;
+}
+
+/* Define el estilo para el elemento con el id 'vertical5' */
+#vertical5{
+    height: 200px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 74%;
+    right: 49.5%;
+}
+
+/* Define el estilo para el elemento con el id 'c1' */
+#c1{
+    color: white;
+    position: absolute; top: 25%; left: 41.5%;
+}
+
+/* Define el estilo para el elemento con el id 'c2' */
+#c2{
+    color: white;
+    position: absolute; top: 88%; left: 18%;
+}
+
+/* Define el estilo para el elemento con el id 'pc2' */
+#pc2{
+    color: white;
+    font-size: 20px;
+    position: absolute; top: 98%; left: 18%;
+}
+
+/* Define el estilo para el elemento con el id 'maps' */
+#maps{
+    position: absolute; top: 90%; left: 60%;
+}
+
+/* Define el estilo para el elemento con el id 'png5' */
+#png5{
+    position: absolute; top: 40%; left: 17.5%;
+}
+
+/* Define el estilo para el elemento con el id 'png6' */
+#png6{
+    position: absolute; top: 40%; left: 47.5%;
+}
+
+/* Define el estilo para el elemento con el id 'png7' */
+#png7{ 
+    position: absolute; top: 40%; left: 77.5%;
+}
+
+/* Define el estilo para el elemento con el id 'png8' */
+#png8{
+    position: absolute; top: 55%; left: 30.5%;
+}
+
+/* Define el estilo para el elemento con el id 'png9' */
+#png9{
+    position: absolute; top: 55%; left: 64.5%;
+}
+
+/* Define el estilo para el elemento con el id 'ppng5' */
+#ppng5{
+    color: white;
+    position: absolute; top: 47%; left: 16.5%;
+}
+
+/* Define el estilo para el elemento con el id 'ppng6' */
+#ppng6{
+    color: white;
+    position: absolute; top: 47%; left: 44%;
+}
+
+/* Define el estilo para el elemento con el id 'ppng7' */
+#ppng7{ 
+    color: white;
+    position: absolute; top: 47%; left: 75%;
+}
+
+/* Define el estilo para el elemento con el id 'ppng8' */
+#ppng8{
+    color: white;
+    position: absolute; top: 62%; left: 28%;
+}
+
+/* Define el estilo para el elemento con el id 'ppng9' */
+#ppng9{
+    color: white;
+    position: absolute; top: 62%; left: 64%;
+}

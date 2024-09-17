@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Establece el tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define que la página es adaptable a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descripción del sitio web para motores de búsqueda -->
+    <meta name="description" content="Somos una empresa dedicada al audio donde nuestros productos destacan por su calidad">
+    <!-- Palabras clave para optimización en motores de búsqueda (SEO) -->
+    <meta name="Keywords" content="Lobatonix Studios, Lobatonix">
+    <!-- Indica la ubicación física de la empresa -->
+    <meta name="locality" content="Los Palacios y Villafranca, Sevilla,España,europa,">
+    <!-- Define la categoría a la que pertenece la empresa -->
+    <meta name="category" content="Spanish, Spain, Productos sonido">
+    <!-- Enlaza el archivo CSS externo que contiene los estilos de la página -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Lobatonix Studios</title>
+</head>
+
+<body class="body2">      
+    <!-- Título principal de la página -->
+     <section>
+    <h1 class="titulo">Lobatonix Studios</h1>
+    </section>
+    <!-- Menú de navegación que enlaza a otras páginas del sitio -->
+    <nav>
+        <ul class="menu">
+            <!-- Enlace a la página de inicio -->
+            <li><a href="../index.html">Inicio</a></li>
+            <!-- Enlace a la página de productos -->
+            <li><a href="productos.html">Productos</a></li>
+            <!-- Enlace a la página de presupuesto con estilo aplicado -->
+            <li><a href="#">Presupuesto</a></li><div id="linea17"></div>
+            <!-- Enlace a la página de contacto -->
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <section>
+        <h2>Formulario del presupuesto</h2>
+        </section>
+        <!-- Formulario con validaciones básicas para el envío de un presupuesto -->
+        <form action="#" method="post" onsubmit="return validarFormulario()">
+            <!-- Campo para ingresar el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+            <!-- Campo para ingresar el correo electrónico -->
+            <label for="email"><br>Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Escribe tu correo electrónico">
+
+            <!-- Campo para ingresar el teléfono con una validación de formato de 9 dígitos -->
+            <label for="telefono"><br>Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required placeholder="Escribe tu teléfono (9 dígitos)">
+
+            <!-- Área de texto para que el usuario deje un mensaje o solicitud -->
+            <label for="mensaje"><br>Solicite más información:<br></label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <!-- Checkbox para que el usuario acepte la política de privacidad -->
+            <div class="privacy-policy">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto la <a href="#">Política de privacidad</a></label>
+            </div>
+
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Elementos decorativos con clase 'linea' para agregar líneas estilizadas en la página -->
+    <div class="linea9"></div>
+    <div class="linea10"></div>
+    <div class="linea11"></div>
+    <div class="linea12"></div>
+
+    <!-- Pie de página del sitio web -->
+    <footer>
+        <div class="container4">  
+            <!-- Sección de información de la empresa y enlaces a otras páginas -->
+            <p id="pp8" class="text">Nuestra compañia,<br>gracias por su aporte<br><br>Noticias Lobatonix Studios<br>nuestros nuevos prototipos<br><br><a class="enlaces" href="contacto.html">Soporte, tus problemas son<br> nuestros problemas</a></p>
+            
+            <!-- Líneas verticales como separadores decorativos en el pie de página -->
+            <div id="vertical4"></div>
+            <div id="vertical5"></div>
+
+            <!-- Enlaces adicionales como el presupuesto, sitemap y advertencias -->
+            <p id="pp9" class="text"><a class="enlaces" href="presupuesto.html">Presupuesto, identifiquese para<br>saber con quien tratamos</a><br><br><a class="enlaces" href="contacto.html">Sitemap, vea nuestra ubicación<br>fisica y descubra quienes somos</a><br><br>Advertencia de<br>compra vía online</p>
+
+            <!-- Derechos de autor -->
+            <p id="pp10">© 2024 Lobatonix Studios Corporation</p>
+
+            <!-- Enlaces a redes sociales con íconos -->
+            <a href="https://www.youtube.com/" target="_blank"><img id="pp11" src="../img/png4.png" alt="Logo Youtube" height="60" width="60"></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><img id="pp12" src="../img/png2.png" alt="Logo X" height="60" width="60"></a>
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F&hl=es-es&aa_click=8891933284028179" target="_blank"><img id="pp13" src="../img/png3.png" alt="Logo Instagram" height="60" width="60"></a>
+        </div>
+    </footer>
+</body>
+</html>
